@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #000010, #000);
+  color: #e0ffff;
+  font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0, 255, 255, 0.05);
+  border-bottom: 1px solid cyan;
+  box-shadow: 0 0 15px cyan;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px cyan;
+}
+
+nav a {
+  color: cyan;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-shadow: 0 0 15px cyan;
+  color: white;
+}
+
+main {
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+.highlight {
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+pre {
+  color: #00ffff;
+  font-size: 16px;
+  text-align: left;
+  display: inline-block;
+  background: rgba(0,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px cyan;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Loader */
+#loader { ... } /* (pakai kode loader dari sebelumnya) */
+
+/* Sound Toggle */
+#sound-toggle { ... } /* (pakai kode tombol suara dari sebelumnya) */
+
+/* Glitch Overlay */
+.glitch-overlay { ... } /* (pakai kode glitch dari sebelumnya) */
